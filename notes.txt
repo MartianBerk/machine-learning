@@ -12,3 +12,10 @@ A model of linked neurons.
 
 State:
 A neural networks memory; saves a set of the intermediary calculations each time it is run and reuse them next time as part of the input.
+
+Sigmoid:
+Predicting the probability that a certain sample belongs to a particular class is the inverse form of the logit function. This is called the Logistic Sigmoid Function, or Sigmoid function for short.
+The Logit function is the logarithm of the odds ratio (log-odds). The odds ratio is simply the odds in favour of a positive event: p / (1 - p). Therefore, the logit function is: log(p / /(1 - p)).
+
+Adaline Vs Logistic Regression:
+Adaline (Adaptive Linear Neuron) uses the identity function as the activation function. In a Logistic Regression model, the activation function becomes the sigmoid function. Logistic Regression is one of the most widely used algorithms for classification. It only works for binary classification though (classes 1 and 0).

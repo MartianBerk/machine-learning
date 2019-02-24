@@ -1,8 +1,8 @@
 import numpy as np
 
-from .baserule import BaseRule
+from .baseclassifier import BaseClassifier
 
-class AdalineGD(BaseRule):
+class AdalineGD(BaseClassifier):
     """ADAptive LInear NEuron classifier.
 
     Parameters

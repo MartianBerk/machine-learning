@@ -2,7 +2,7 @@ from .adaline import AdalineGD, AdalineSGD
 from .perceptron import Perceptron
 
 
-class RuleFactory:
+class ClassifierFactory:
     @staticmethod
     def get(rule, eta=0.1, n_iter=10, random_state=1, **kwargs):
         if rule == 'perceptron':

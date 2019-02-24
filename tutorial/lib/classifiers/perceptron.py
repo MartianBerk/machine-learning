@@ -1,9 +1,9 @@
 import numpy as np
 
-from .baserule import BaseRule
+from .baseclassifier import BaseClassifier
 
 
-class Perceptron(BaseRule):
+class Perceptron(BaseClassifier):
     """Perceptron classifier.
 
     Parameters

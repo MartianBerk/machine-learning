@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 from matplotlib.colors import ListedColormap
 
-from lib.rules.rulefactory import RuleFactory
+from lib.classifiers.factory import ClassifierFactory
 
 
 def plot_data(X):
@@ -67,7 +67,7 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
 
 
 def learn_perceptron(X, y, eta, n_iter, show_learn=False, show_decision_regions=False):
-    pct = RuleFactory.get('perceptron', eta=eta, n_iter=n_iter)
+    pct = ClassifierFactory.get('perceptron', eta=eta, n_iter=n_iter)
     pct.fit(X, y)
 
     if show_learn:
@@ -86,7 +86,7 @@ def learn_perceptron(X, y, eta, n_iter, show_learn=False, show_decision_regions=
 
 
 def learn_adaline(X, y, eta, n_iter, show_learn=False, show_decision_regions=False):
-    ada = RuleFactory.get("adalinegd", eta=eta, n_iter=n_iter)
+    ada = ClassifierFactory.get("adalinegd", eta=eta, n_iter=n_iter)
     ada.fit(X, y)
 
     if show_learn:
@@ -105,7 +105,7 @@ def learn_adaline(X, y, eta, n_iter, show_learn=False, show_decision_regions=Fal
 
 
 def learn_adaline_sgd(X, y, eta, n_iter, show_learn=False, show_decision_regions=False):
-    ada = RuleFactory.get("adalinesgd", eta=eta, n_iter=n_iter)
+    ada = ClassifierFactory.get("adalinesgd", eta=eta, n_iter=n_iter)
     ada.fit(X, y)
 
     if show_learn:

@@ -142,5 +142,5 @@ if __name__ == "__main__":
     plt.xlabel("petal length [standardized]")
     plt.ylabel("petal width [standardized]")
     plt.legend(loc="upper left")
-    plt.show()/
+    plt.show()
 

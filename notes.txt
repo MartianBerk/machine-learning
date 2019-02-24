@@ -1,0 +1,14 @@
+Weight:
+A number used in a calculation to figure out the return value (algorithm tweaks the weight to find the best result)
+
+Cost:
+Average error amount of your function. Made up of the square of how much your function is off from the correct result, summed, divided by the amount of samples in the dataset.
+
+Neuron:
+Estimation function that takes a set of inputs, multiplies them by weights to get an output.
+
+Neural Network:
+A model of linked neurons.
+
+State:
+A neural networks memory; saves a set of the intermediary calculations each time it is run and reuse them next time as part of the input.
